@@ -1,0 +1,4 @@
+EVER INCREASING:
+
+ - increasing ObjectSpace.each_object(RSpec::Core::ExampleGroup).each
+ - ObjectSpace.each_object(Class) { |x| puts x } # or superclass
