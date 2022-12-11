@@ -2,6 +2,10 @@ require "rspec/core"
 require "memory_profiler"
 require "pry-byebug"
 
+if ENV['WITH_FIX']
+  require_relative "lib/monkey_fix"
+end
+
 i = 0
 
 $memprof = false
